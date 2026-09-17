@@ -13,6 +13,9 @@ build/
 .react-router/
 *.tsbuildinfo
 
+# Leftover Managed Runtime bundle extracted into the project root
+.mrt-local-bundle/
+
 # Environment variables (keep .env.default)
 .env
 .env.local

@@ -1122,6 +1122,7 @@
         "hero": {
             "liquidation": {
                 "line1": "전품 정리합니다.",
+                "highlight": "전품 정리합니다",
                 "line2": "모두 처분합니다!",
                 "ctaText": "세일 쇼핑하기",
                 "ctaAriaLabel": "세일 쇼핑하기, 모두 처분합니다",

@@ -1240,6 +1240,7 @@
         "hero": {
             "liquidation": {
                 "line1": "Stiamo liquidando.",
+                "highlight": "liquidando",
                 "line2": "Tutto deve andare!",
                 "ctaText": "Vai ai saldi",
                 "ctaAriaLabel": "Vai ai saldi, tutto deve andare",

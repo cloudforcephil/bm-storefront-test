@@ -1123,6 +1123,7 @@
         "hero": {
             "liquidation": {
                 "line1": "Estamos liquidando.",
+                "highlight": "liquidando",
                 "line2": "¡Todo debe salir!",
                 "ctaText": "Ver la liquidación",
                 "ctaAriaLabel": "Ver la liquidación, todo debe salir",

@@ -15,7 +15,7 @@
  */
 import { describe, test, expect, vi, beforeEach, afterEach } from 'vitest';
 import type { LoaderFunctionArgs } from 'react-router';
-import { ApiError, type ShopperExperience } from '@/scapi';
+import { ApiError, AuthTokenInvalidError, type ShopperExperience } from '@/scapi';
 import { fetchComponentFromLoader, fetchComponentWithComponentData } from './component-loader.server';
 import { fetchComponent } from '@/lib/api/component.server';
 import { registry } from '@/lib/page-designer/registry';
@@ -215,6 +215,20 @@ describe('componentLoader', () => {
                 mode: 'EDIT',
                 pdToken: MOCK_PD_TOKEN,
             });
+        });
+
+        test('returns null and logs when fetchComponent throws AuthTokenInvalidError', async () => {
+            mockedFetchComponent.mockRejectedValueOnce(new AuthTokenInvalidError());
+
+            const result = await fetchComponentWithComponentData(createLoaderArgs(BASE_URL), {
+                componentId: MOCK_COMPONENT_ID,
+            });
+
+            expect(result).toBeNull();
+            expect(mockLogger.warn).toHaveBeenCalledWith(
+                'Page Designer component fetch skipped: shopper token is invalid',
+                { componentId: MOCK_COMPONENT_ID }
+            );
         });
 
         test('propagates non-ApiError errors', async () => {

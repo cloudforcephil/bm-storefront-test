@@ -30,6 +30,7 @@ vi.mock('react-i18next', () => ({
         t: (key: string) => {
             const translations: Record<string, string> = {
                 'hero.liquidation.line1': "We're liquidating.",
+                'hero.liquidation.highlight': 'liquidating',
                 'hero.liquidation.line2': 'Everything must go!',
                 'hero.liquidation.ctaText': 'Shop the sale',
                 'hero.liquidation.ctaAriaLabel': 'Shop the sale, everything must go',
@@ -79,6 +80,9 @@ describe('LiquidationHero', () => {
         const heading = screen.getByRole('heading', { level: 1 });
         expect(heading).toHaveTextContent("We're liquidating.");
         expect(heading).toHaveTextContent('Everything must go!');
+        const emphasized = heading.querySelector('span.underline');
+        expect(emphasized).toHaveTextContent('liquidating');
+        expect(emphasized).toHaveClass('text-warning-foreground', 'decoration-wavy');
         expect(screen.getByRole('link', { name: 'Shop the sale, everything must go' })).toHaveAttribute(
             'href',
             `${getSitePrefix()}/category/root`

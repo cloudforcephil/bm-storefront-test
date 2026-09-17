@@ -1126,6 +1126,7 @@
         "hero": {
             "liquidation": {
                 "line1": "全品処分中。",
+                "highlight": "全品処分中",
                 "line2": "売り尽くします！",
                 "ctaText": "セールを見る",
                 "ctaAriaLabel": "セールを見る、売り尽くします",

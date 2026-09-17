@@ -1122,6 +1122,7 @@
         "hero": {
             "liquidation": {
                 "line1": "Vi likviderer.",
+                "highlight": "likviderer",
                 "line2": "Alt skal væk!",
                 "ctaText": "Shop udsalget",
                 "ctaAriaLabel": "Shop udsalget, alt skal væk",

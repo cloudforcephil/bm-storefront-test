@@ -396,6 +396,15 @@ describe('_app.tsx - Default Layout Route', () => {
             expect(rootCategory).toEqual(mockRootCategory);
         });
 
+        it('returns an empty root category when the catalog request fails', async () => {
+            const { fetchCategory } = await import('@/lib/api/categories.server');
+            vi.mocked(fetchCategory).mockRejectedValue(new Error('Access token is invalid or revoked'));
+
+            const result = loader({ context: {} as never, request: new Request('https://example.test/') } as never);
+
+            await expect(result.root).resolves.toEqual({ id: 'root' });
+        });
+
         it('should fetch header embedded component data with componentId="header"', async () => {
             const { fetchCategory } = await import('@/lib/api/categories.server');
             const { fetchComponentWithComponentData } = await import('@/lib/page-designer/component-loader.server');

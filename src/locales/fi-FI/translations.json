@@ -1125,6 +1125,7 @@
         "hero": {
             "liquidation": {
                 "line1": "Likvidoimme.",
+                "highlight": "Likvidoimme",
                 "line2": "Kaiken on mentävä!",
                 "ctaText": "Siirry aleen",
                 "ctaAriaLabel": "Siirry aleen, kaiken on mentävä",

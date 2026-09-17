@@ -1122,6 +1122,7 @@
         "hero": {
             "liquidation": {
                 "line1": "Wir räumen das Lager.",
+                "highlight": "Lager",
                 "line2": "Alles muss raus!",
                 "ctaText": "Zum Sale",
                 "ctaAriaLabel": "Zum Sale, alles muss raus",

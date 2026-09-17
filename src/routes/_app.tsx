@@ -65,8 +65,13 @@ export function loader({ context, request }: Route.LoaderArgs): LoaderData {
     logger.debug('AppLayout: loader starting', { rootCategoryId, maxDepth });
 
     // Load the root category and its sub categories information
-    // Depth 1 fetches the root category with its immediate children
-    const rootCategoryPromise = fetchCategory(context, rootCategoryId, 1);
+    // Depth 1 fetches the root category with its immediate children.
+    // Guest SLAS can fail locally against the public demo org; keep the layout
+    // streaming instead of letting an unhandled rejection kill the Node process.
+    const rootCategoryPromise = fetchCategory(context, rootCategoryId, 1).catch((error: unknown) => {
+        logger.error('AppLayout: root category fetch failed', { error });
+        return { id: rootCategoryId } as ShopperProducts.schemas['Category'];
+    });
 
     // Load each second-level sub categories tree as well, in case the resolved root-level category has any sub
     // categories and maxDepth allows for it. We then base this composed second-level promise on the initial root
@@ -101,6 +106,13 @@ export function loader({ context, request }: Route.LoaderArgs): LoaderData {
         { context, request, params: {} } as Route.LoaderArgs,
         { componentId: 'mega-menu' }
     );
+
+    void Promise.allSettled([
+        rootCategoryPromise,
+        subCategoriesPromise,
+        headerComponentPromise,
+        megaMenuComponentPromise,
+    ]);
 
     return {
         root: rootCategoryPromise,

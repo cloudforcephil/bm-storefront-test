@@ -1120,6 +1120,7 @@
         "hero": {
             "liquidation": {
                 "line1": "Wij liquideren.",
+                "highlight": "liquideren",
                 "line2": "Alles moet weg!",
                 "ctaText": "Shop de sale",
                 "ctaAriaLabel": "Shop de sale, alles moet weg",

@@ -1125,6 +1125,7 @@
         "hero": {
             "liquidation": {
                 "line1": "Vi likviderar.",
+                "highlight": "likviderar",
                 "line2": "Allt måste bort!",
                 "ctaText": "Shoppa rean",
                 "ctaAriaLabel": "Shoppa rean, allt måste bort",

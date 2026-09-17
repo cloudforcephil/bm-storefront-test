@@ -10,12 +10,14 @@
         "minSdkVersion": "1.3.1"
     },
     "scripts": {
+        "predev": "node scripts/check-node.js",
         "dev": "pnpm locales:aggregate-extensions && pnpm config:aggregate-extensions && cross-env NODE_OPTIONS=--conditions=dev-data-store sfnext dev",
         "dev:debug": "cross-env NODE_OPTIONS=\"--inspect --conditions=dev-data-store\" sfnext dev",
         "dev:log": "cross-env NODE_OPTIONS=--conditions=dev-data-store SFCC_LOG_LEVEL=debug sfnext dev",
         "build": "pnpm locales:aggregate-extensions && pnpm config:aggregate-extensions && pnpm cartridge:generate && react-router build",
         "bundlesize": "cross-env BUNDLES_SIZE_CHECK=true pnpm build",
         "bundlesize:compare": "node scripts/compare-bundlesize.mjs",
+        "prestart": "node scripts/check-node.js",
         "start": "cross-env SFNEXT_DATA_STORE_UNAVAILABLE_MODE=fallback sfnext preview",
         "preview": "pnpm start",
         "push": "sfnext push --project-directory .",

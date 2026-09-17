@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import type { ReactElement } from 'react';
+import type { ReactElement, ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from '@/components/link';
 import { Button } from '@/components/ui/button';
@@ -21,6 +21,29 @@ import { DynamicImage } from '@/components/dynamic-image';
 import heroImage from '/images/hero-01.webp';
 
 const IMAGE_WIDTHS = ['92vw', '92vw', '44vw'];
+
+const HIGHLIGHT_CLASS =
+    'text-warning-foreground underline decoration-wavy decoration-warning-foreground decoration-[0.08em] underline-offset-[0.14em]';
+
+function emphasizePhrase(text: string, highlight: string): ReactNode {
+    if (!highlight) {
+        return text;
+    }
+
+    const start = text.toLocaleLowerCase().indexOf(highlight.toLocaleLowerCase());
+    if (start === -1) {
+        return text;
+    }
+
+    const end = start + highlight.length;
+    return (
+        <>
+            {text.slice(0, start)}
+            <span className={HIGHLIGHT_CLASS}>{text.slice(start, end)}</span>
+            {text.slice(end)}
+        </>
+    );
+}
 
 /**
  * Full-bleed homepage hero announcing the store closing sale.
@@ -40,7 +63,9 @@ export default function LiquidationHero(): ReactElement {
                     <h1
                         id={headingId}
                         className="font-bold leading-[0.92] text-brand-white tracking-[-0.045em] text-[clamp(2.75rem,8vw,7.25rem)]">
-                        <span className="block">{t('hero.liquidation.line1')}</span>
+                        <span className="block">
+                            {emphasizePhrase(t('hero.liquidation.line1'), t('hero.liquidation.highlight'))}
+                        </span>
                         <span className="mt-[0.08em] block">{t('hero.liquidation.line2')}</span>
                     </h1>
                     <div className="mt-10">

@@ -1128,6 +1128,7 @@
         "hero": {
             "liquidation": {
                 "line1": "我们正在清仓。",
+                "highlight": "清仓",
                 "line2": "全部必须清出！",
                 "ctaText": "选购特卖",
                 "ctaAriaLabel": "选购特卖，全部必须清出",

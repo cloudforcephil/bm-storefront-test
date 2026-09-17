@@ -15,7 +15,7 @@
  */
 import type { LoaderFunctionArgs } from 'react-router';
 import { fetchPage, type PageDesignerPageModeParams, type PageDesignerPageParams } from '@/lib/api/page.server';
-import { ApiError, type ShopperExperience } from '@/scapi';
+import { ApiError, AuthTokenInvalidError, type ShopperExperience } from '@/scapi';
 import {
     isDesignModeActive,
     isPreviewModeActive,
@@ -82,6 +82,11 @@ export async function fetchPageWithComponentData(
     try {
         page = await fetchPageFromLoader(args, params);
     } catch (e) {
+        if (e instanceof AuthTokenInvalidError) {
+            const logger = getLogger(args.context);
+            logger.warn('Page Designer fetch skipped: shopper token is invalid', { pageId: params.pageId });
+            return null;
+        }
         if (e instanceof ApiError) {
             if (e.status !== 404) {
                 const logger = getLogger(args.context);

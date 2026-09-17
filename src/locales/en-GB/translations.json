@@ -1376,6 +1376,7 @@
         "hero": {
             "liquidation": {
                 "line1": "We're liquidating.",
+                "highlight": "liquidating",
                 "line2": "Everything must go!",
                 "ctaText": "Shop the sale",
                 "ctaAriaLabel": "Shop the sale, everything must go",
