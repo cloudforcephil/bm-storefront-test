@@ -34,6 +34,7 @@ import hero01 from '/images/hero-01.webp';
 import hero02 from '/images/hero-02.webp';
 import hero03 from '/images/hero-03.webp';
 import hero04 from '/images/hero-04.webp';
+import heroNewPerspectives from '/images/hero-new-perspectives.jpg';
 import HeroCarousel, { type HeroSlide } from '@/components/hero-carousel';
 import LiquidationHero from '@/components/home/liquidation-hero';
 import { ProductCarouselSkeleton } from '@/components/product-carousel';
@@ -187,7 +188,7 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
             id: 'slide-4',
             title: t('hero.slide4.title'),
             subtitle: t('hero.slide4.subtitle'),
-            imageUrl: hero04,
+            imageUrl: heroNewPerspectives,
             imageAlt: t('hero.slide4.imageAlt'),
             ctaText: t('hero.slide4.ctaText'),
             ctaAriaLabel: t('hero.slide4.ctaAriaLabel'),
