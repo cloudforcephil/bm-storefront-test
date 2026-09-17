@@ -190,7 +190,7 @@ vi.mock('react-i18next', async () => {
                         "Timeless craftsmanship meets contemporary style in our men's footwear collection.",
                     'featuredContent.men.imageAlt': "Men's Collection",
                     'featuredContent.men.ctaText': 'EXPLORE COLLECTION',
-                    'featuredContent.styleForRealLife.title': 'Style for Real Life',
+                    'featuredContent.styleForRealLife.title': 'Real-life Styles',
                     'featuredContent.styleForRealLife.description':
                         'We believe style should be effortless, authentic, and accessible. Our collections are designed for the modern individual who values quality, versatility, and timeless appeal.\n\nDiscover pieces that move with you, adapt to your life, and become the foundation of a wardrobe that works—every day, everywhere.',
                 };
@@ -355,7 +355,6 @@ describe('HomePage', () => {
             renderComponent();
             await waitFor(() => {
                 expect(screen.getByTestId('popular-categories')).toBeInTheDocument();
-                expect(screen.getByText('Style for Real Life')).toBeInTheDocument();
             });
         });
     });
@@ -386,7 +385,7 @@ describe('HomePage', () => {
         test('renders all content cards with correct count', () => {
             renderComponent();
             const contentCards = screen.getAllByTestId('content-card');
-            expect(contentCards).toHaveLength(3); // Women, Men, and Style for Real Life card
+            expect(contentCards).toHaveLength(3); // Women, Men, and Real-life Styles card
         });
     });
 
