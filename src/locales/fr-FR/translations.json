@@ -1125,6 +1125,13 @@
     },
     "home": {
         "hero": {
+            "liquidation": {
+                "line1": "Nous liquidons.",
+                "line2": "Tout doit disparaître !",
+                "ctaText": "Voir les soldes",
+                "ctaAriaLabel": "Voir les soldes, tout doit disparaître",
+                "imageAlt": "Looks de la collection de fermeture"
+            },
             "slide1": {
                 "title": "La nouvelle saison",
                 "subtitle": "Une nouvelle collection basée sur le contraste, les proportions et une attitude moderne. Découvrez les pièces maîtresses de la saison à venir.",

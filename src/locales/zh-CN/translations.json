@@ -1126,6 +1126,13 @@
     },
     "home": {
         "hero": {
+            "liquidation": {
+                "line1": "我们正在清仓。",
+                "line2": "全部必须清出！",
+                "ctaText": "选购特卖",
+                "ctaAriaLabel": "选购特卖，全部必须清出",
+                "imageAlt": "闭店系列造型"
+            },
             "slide1": {
                 "title": "新一季",
                 "subtitle": "全新系列，以对比、比例和现代态度为特色。介绍下一季的重点单品。",

@@ -1238,6 +1238,13 @@
     },
     "home": {
         "hero": {
+            "liquidation": {
+                "line1": "Stiamo liquidando.",
+                "line2": "Tutto deve andare!",
+                "ctaText": "Vai ai saldi",
+                "ctaAriaLabel": "Vai ai saldi, tutto deve andare",
+                "imageAlt": "Look della collezione di chiusura"
+            },
             "slide1": {
                 "title": "La nuova stagione",
                 "subtitle": "Una nuova collezione caratterizzata da contrasti, proporzioni e spirito moderno. Ecco i capi imperdibili della prossima stagione.",

@@ -1374,6 +1374,13 @@
     },
     "home": {
         "hero": {
+            "liquidation": {
+                "line1": "We're liquidating.",
+                "line2": "Everything must go!",
+                "ctaText": "Shop the sale",
+                "ctaAriaLabel": "Shop the sale, everything must go",
+                "imageAlt": "Looks from the closing collection"
+            },
             "slide1": {
                 "title": "The New Season",
                 "subtitle": "A new collection shaped by contrast, proportion, and modern attitude. Introducing key pieces for the season ahead.",

@@ -120,6 +120,14 @@ vi.mock('@/components/hero-carousel', () => ({
     HeroCarouselSkeleton: () => <div data-testid="hero-carousel-skeleton">Hero Carousel</div>,
 }));
 
+vi.mock('@/components/home/liquidation-hero', () => ({
+    default: () => (
+        <section data-testid="liquidation-hero">
+            <h1>We&apos;re liquidating. Everything must go!</h1>
+        </section>
+    ),
+}));
+
 // Mock ProductCarousel components
 vi.mock('@/components/product-carousel', () => ({
     ProductCarouselSkeleton: () => <div data-testid="product-carousel-skeleton">Product Carousel</div>,
@@ -288,6 +296,14 @@ describe('HomePage', () => {
             await waitFor(() => {
                 expect(screen.getByTestId('popular-categories')).toBeInTheDocument();
             });
+        });
+
+        test('renders the liquidation hero', () => {
+            renderComponent();
+            expect(screen.getByTestId('liquidation-hero')).toBeInTheDocument();
+            expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
+                "We're liquidating. Everything must go!"
+            );
         });
 
         test('renders without header banner region when no regions available', () => {

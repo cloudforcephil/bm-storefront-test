@@ -1122,6 +1122,13 @@
     },
     "home": {
         "hero": {
+            "liquidation": {
+                "line1": "我們正在出清。",
+                "line2": "全部必須清出！",
+                "ctaText": "選購特賣",
+                "ctaAriaLabel": "選購特賣，全部必須清出",
+                "imageAlt": "閉店系列造型"
+            },
             "slide1": {
                 "title": "本季新品",
                 "subtitle": "全新系列，揉合對比、比例及現代主張。介紹下季重點單品。",

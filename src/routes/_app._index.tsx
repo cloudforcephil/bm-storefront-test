@@ -35,6 +35,7 @@ import hero02 from '/images/hero-02.webp';
 import hero03 from '/images/hero-03.webp';
 import hero04 from '/images/hero-04.webp';
 import HeroCarousel, { type HeroSlide } from '@/components/hero-carousel';
+import LiquidationHero from '@/components/home/liquidation-hero';
 import { ProductCarouselSkeleton } from '@/components/product-carousel';
 import { ProductCarouselWithData } from '@/components/product-carousel/carousel';
 import { SeoMeta } from '@/components/seo-meta';
@@ -199,7 +200,7 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
     return (
         <>
             <div className="pb-16 -mt-8">
-                <h1 className="sr-only">{t('meta.title', { defaultValue: 'NextGen PWA Kit Store' })}</h1>
+                <LiquidationHero />
                 <SeoMeta
                     rawTitle
                     title={t('meta.title', { defaultValue: 'NextGen PWA Kit Store' })}

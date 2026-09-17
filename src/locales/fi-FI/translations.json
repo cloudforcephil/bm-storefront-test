@@ -1123,6 +1123,13 @@
     },
     "home": {
         "hero": {
+            "liquidation": {
+                "line1": "Likvidoimme.",
+                "line2": "Kaiken on mentävä!",
+                "ctaText": "Siirry aleen",
+                "ctaAriaLabel": "Siirry aleen, kaiken on mentävä",
+                "imageAlt": "Asuja lopetusmallistosta"
+            },
             "slide1": {
                 "title": "Uusi sesonki",
                 "subtitle": "Uusi mallisto, jota muovaavat kontrastit, mittasuhteet ja moderni asenne. Esittelyssä tulevan kauden avaintuotteet.",

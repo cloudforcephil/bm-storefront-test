@@ -1119,6 +1119,13 @@
     },
     "home": {
         "hero": {
+            "liquidation": {
+                "line1": "Vi likviderer.",
+                "line2": "Alt må vekk!",
+                "ctaText": "Handle salget",
+                "ctaAriaLabel": "Handle salget, alt må vekk",
+                "imageAlt": "Look fra avviklingssalget"
+            },
             "slide1": {
                 "title": "Den nye sesongen",
                 "subtitle": "En ny kolleksjon formet av kontraster, proporsjoner og moderne holdning. Vi presenterer nøkkelplagg for den kommende sesongen.",

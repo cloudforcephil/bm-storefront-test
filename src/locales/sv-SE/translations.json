@@ -1123,6 +1123,13 @@
     },
     "home": {
         "hero": {
+            "liquidation": {
+                "line1": "Vi likviderar.",
+                "line2": "Allt måste bort!",
+                "ctaText": "Shoppa rean",
+                "ctaAriaLabel": "Shoppa rean, allt måste bort",
+                "imageAlt": "Looks från avslutningskollektionen"
+            },
             "slide1": {
                 "title": "Den nya säsongen",
                 "subtitle": "En ny kollektion baserad på kontraster, proportioner och en modern attityd. Nyckelplagg för den kommande säsongen.",

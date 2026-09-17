@@ -1121,6 +1121,13 @@
     },
     "home": {
         "hero": {
+            "liquidation": {
+                "line1": "Estamos liquidando.",
+                "line2": "¡Todo debe salir!",
+                "ctaText": "Ver la liquidación",
+                "ctaAriaLabel": "Ver la liquidación, todo debe salir",
+                "imageAlt": "Looks de la colección de cierre"
+            },
             "slide1": {
                 "title": "La nueva temporada",
                 "subtitle": "Una nueva colección marcada por el contraste, la proporción y la actitud moderna. Presentamos piezas clave para la próxima temporada.",

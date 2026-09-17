@@ -1124,6 +1124,13 @@
     },
     "home": {
         "hero": {
+            "liquidation": {
+                "line1": "Estamos a liquidar.",
+                "line2": "Tudo tem de sair!",
+                "ctaText": "Ver a liquidação",
+                "ctaAriaLabel": "Ver a liquidação, tudo tem de sair",
+                "imageAlt": "Looks da coleção de encerramento"
+            },
             "slide1": {
                 "title": "A nova estação",
                 "subtitle": "Uma nova coleção moldada pelo contraste, proporção e atitude moderna. Apresentando peças-chave para a próxima temporada.",

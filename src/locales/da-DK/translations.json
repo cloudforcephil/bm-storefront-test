@@ -1120,6 +1120,13 @@
     },
     "home": {
         "hero": {
+            "liquidation": {
+                "line1": "Vi likviderer.",
+                "line2": "Alt skal væk!",
+                "ctaText": "Shop udsalget",
+                "ctaAriaLabel": "Shop udsalget, alt skal væk",
+                "imageAlt": "Looks fra afslutningssalget"
+            },
             "slide1": {
                 "title": "Den nye sæson",
                 "subtitle": "En ny kollektion formet af kontraster, proportioner og moderne attitude. Vi præsenterer nøgleprodukter til den kommende sæson.",

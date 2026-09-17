@@ -1118,6 +1118,13 @@
     },
     "home": {
         "hero": {
+            "liquidation": {
+                "line1": "Wij liquideren.",
+                "line2": "Alles moet weg!",
+                "ctaText": "Shop de sale",
+                "ctaAriaLabel": "Shop de sale, alles moet weg",
+                "imageAlt": "Looks uit de slotcollectie"
+            },
             "slide1": {
                 "title": "Het nieuwe seizoen",
                 "subtitle": "Een nieuwe collectie, vormgegeven met contrast, proportie en een moderne attitude. Introductie van de belangrijkste kledingstukken voor het komende seizoen.",

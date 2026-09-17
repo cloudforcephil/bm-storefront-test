@@ -1134,6 +1134,13 @@
     },
     "home": {
         "hero": {
+            "liquidation": {
+                "line1": "Likwidujemy.",
+                "line2": "Wszystko musi odejść!",
+                "ctaText": "Zobacz wyprzedaż",
+                "ctaAriaLabel": "Zobacz wyprzedaż, wszystko musi odejść",
+                "imageAlt": "Stylizacje z kolekcji wyprzedażowej"
+            },
             "slide1": {
                 "title": "Nowy sezon",
                 "subtitle": "Nowa kolekcja oparta na kontraście, proporcjach i nowoczesnej postawie. Przedstawiamy kluczowe elementy garderoby na nadchodzący sezon.",

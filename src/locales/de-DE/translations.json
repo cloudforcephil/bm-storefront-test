@@ -1120,6 +1120,13 @@
     },
     "home": {
         "hero": {
+            "liquidation": {
+                "line1": "Wir räumen das Lager.",
+                "line2": "Alles muss raus!",
+                "ctaText": "Zum Sale",
+                "ctaAriaLabel": "Zum Sale, alles muss raus",
+                "imageAlt": "Looks aus der Schlussverkaufskollektion"
+            },
             "slide1": {
                 "title": "Die neue Saison",
                 "subtitle": "Eine neue Kollektion, geprägt von Kontrasten, Proportionen und einer modernen Einstellung. Die Must-haves für die kommende Saison.",
